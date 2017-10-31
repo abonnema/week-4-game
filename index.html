@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Game</title>
+
+    <link rel="reset.css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    
+
+    <script src="assets/javascript/game.js"></script>
+  
+</head>
+
+<body style="background-image: url(assets/images/background.jpg)">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h1 class="text-center panel-title" style="font:45px">Crystals Collector!</h1>
+                    </div>
+                        <h3 class="text-center panel-body"></p>A random number has been selected!</p>
+                            <br> 
+                            <p>Please see the four crystals.</p>
+                            <p>By clicking on a crystal, you will add points to the counter.</p>
+                            <p>You win the game by matching the Crystal's counter to the random number.</p>
+                            <p>The value of each crystal is different! 
+                            <p>Do not go over the counter value.</p>
+                            <p>Each time when the game starts, the game will change the values of each crystal.</p>
+                        </h3>
+                </div>
+            </div>
+
+            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">  
+                <div class="row">
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Number to match:</h3>
+                            </div>
+                                <div class="panel-body">
+                                    <p><span id="numberChosen"></span></p>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Score:</h3>
+                            </div>
+                                <div class="panel-body">
+                                    <p>Wins:</p><span id="winCounter"></span>
+                                    <p>Losses:</p><span id="lossCounter"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Choose a crystal below:</h3>
+                    </div>
+            
+                    <div class="panel-body">
+                        <img id="crystal-1" src="assets/images/crystal1.png" class="crystal" value="crystal1" width="100"></img>
+                        <img id="crystal-2" src="assets/images/crystal2.png" class="crystal" value="crystal2" width="100"></img>
+                        <img id="crystal-3" src="assets/images/crystal3.jpg" class="crystal" value="crystal3" width="100"></img>
+                        <img id="crystal-4" src="assets/images/crystal4.jpg" class="crystal" value="crystal4" width="100"></img>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Counter Click Total:</h3>
+                    </div>
+                    <div class="panel-body">
+                        <span id="crystal-value"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+</body>
